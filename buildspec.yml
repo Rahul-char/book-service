@@ -5,9 +5,9 @@ phases:
       - echo Logging in to Amazon ECR....
       - aws --version
       #- $(aws ecr get-login --region ap-south-1 --no-include-email)
-      - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/h5e2r3r4
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 577461726862.dkr.ecr.us-east-1.amazonaws.com
       # Replace with this to your repository URI
-      - REPOSITORY_URI=public.ecr.aws/h5e2r3r4/book-service
+      - REPOSITORY_URI=577461726862.dkr.ecr.us-east-1.amazonaws.com/book-service
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
   build:
     commands:
