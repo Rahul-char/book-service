@@ -34,4 +34,6 @@ public class BookController {
 	public Book addBook(@RequestBody Book newBook) {
 		return this.bookRepo.saveAndFlush(newBook);
 	}
+
+
 }

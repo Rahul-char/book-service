@@ -23,5 +23,4 @@ public class Book {
 	private String bookPrice;
 	private LocalDate bookPublishedDate;
 	private String bookUrl;
-	private String bookAuthor;
 }
